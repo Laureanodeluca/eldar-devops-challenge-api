@@ -25,7 +25,7 @@ https://eldar-devops-challenge.onrender.com/tasaOperacion?marca=<MARCA>&importe=
 
 Dónde: 
 
-- `<MARCA>`: Puede ser cualquiera de las siguientes: `visa`, `amex`, `nara`.
+- `<MARCA>`: Puede ser cualquiera de las siguientes: `visa`, `amex`, `naranja`.
 - `<IMPORTE>`: Puede ser cualquier valor entre 0 y 999.
 
 ## Ejercicio 3

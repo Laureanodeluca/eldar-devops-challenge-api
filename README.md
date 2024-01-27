@@ -28,6 +28,8 @@ Dónde:
 - `<MARCA>`: Puede ser cualquiera de las siguientes: `visa`, `amex`, `naranja`.
 - `<IMPORTE>`: Puede ser cualquier valor entre 0 y 999.
 
+**IMPORTANTE**: Este servicio tiene un tier gratuito (el que uso). Uno de los problemas que tiene el tier gratuito es que, si la API está inactiva un tiempo, se ralentiza el servidor mucho. Por lo que la primera vez que se ejecute la API, seguramente tarde mucho en responder (algunos minutos).
+
 ## Ejercicio 3
 > La tabla de empleados tiene un total de 107 registros. ¿Cuántos imprime la siguiente consulta?
 > ```

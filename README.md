@@ -51,6 +51,9 @@ Dónde:
 
 **RESPUESTA:** 10.
 
+<Details>
+<Summary>Explicación</Summary>
+<br>
 Se puede desglosar este código en varias partes para entender qué es lo que hace:
 
 ```
@@ -98,6 +101,8 @@ END LOOP;
 ```
 Se usa un bucle `FOR` para iterar a través de los elementos de la variable `fname`. Se imprime cada nombre junto con su índice usando `DBMS_OUTPUT.PUT_LINE`.
 
+</Details>
+
 ## Ejercicio 4
 > ¿Qué es cierto acerca de la siguiente función?
 > ```
@@ -115,7 +120,11 @@ Se usa un bucle `FOR` para iterar a través de los elementos de la variable `fna
 
 La respuesta correcta es "Le falta un retorno, por lo que no compila".
 
+<Details>
+    <Summary>Explicación</Summary>
+    
 En el header de la función dice que retorna un `Number`, pero la función no retorna nada. 
+</Details>
 
 ## Ejercicio 5
 > Dada un array de strings, unir todos los elementos del array con espacios, convierta todas las letras a minúsculas y envíe el resultado a 'stdout'.

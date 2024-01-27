@@ -104,7 +104,7 @@ LOOP
     DBMS_OUTPUT.PUT_LINE (idx||' '||fname(idx));
 END LOOP;
 ```
-Se usa un bucle `FOR` para iterar a través de los elementos de la variable `fname`. Se imprime cada nombre junto con su índice usando `DBMS_OUTPUT.PUT_LINE`.
+Se usa un bucle `FOR` para iterar a través de los elementos de la variable `fname`. Se imprime cada nombre junto con su índice usando `DBMS_OUTPUT.PUT_LINE`. Este for itera sobre todos los elementos de `fname`. Por como fue creado y llenado `fname`, sabemos que este bucle siempre va a imprimir 10 elementos.
 
 </Details>
 

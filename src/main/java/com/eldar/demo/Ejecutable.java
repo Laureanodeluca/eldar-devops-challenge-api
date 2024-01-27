@@ -30,9 +30,9 @@ public class Ejecutable {
 
         System.out.println("\nc. Informar si una tarjeta es válida para operar:");
         if (naranja.esValidaParaOperar())
-            System.out.println("La tarjeta naranja es válida para operar. (Fecha de vencimiento: "+naranja.toStringVencimiento());
+            System.out.println("La tarjeta naranja es válida para operar. (Fecha de vencimiento: "+naranja.toStringVencimiento()+")");
         else
-            System.out.println("La tarjeta naranja no es válida para operar. (Fecha de vencimiento: "+naranja.toStringVencimiento());
+            System.out.println("La tarjeta naranja no es válida para operar. (Fecha de vencimiento: "+naranja.toStringVencimiento()+")");
 
         System.out.println("\nd. Informar si una tarjeta es distinta a otra:");
         System.out.println("Son distintas (amex y naranja): "+sonDistintas(amex, naranja));

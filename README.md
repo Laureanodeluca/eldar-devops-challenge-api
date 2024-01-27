@@ -118,10 +118,10 @@ Se usa un bucle `FOR` para iterar a través de los elementos de la variable `fna
 > - Falta la sección de declaración.
 > - Habrá un error en tiempo de ejecución. 
 
-La respuesta correcta es "Le falta un retorno, por lo que no compila".
+**RESPUESTA:** Le falta un retorno, por lo que no compila.
 
 <Details>
-    <Summary>Explicación</Summary>
+<Summary>Explicación</Summary>
     
 En el header de la función dice que retorna un `Number`, pero la función no retorna nada. 
 </Details>

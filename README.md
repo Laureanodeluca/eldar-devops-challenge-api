@@ -1,5 +1,5 @@
 # Eldar DevOps Challenge
-Este código es la implementación de una API REST para el desafío propuesto. En este mismo repositorio están las soluciones tanto del ejercicio 1 como del ejercicio 2. 
+Este código es la implementación de una API REST para el desafío propuesto. En este mismo repositorio están las soluciones de todos los ejercicios propuestos. Para ver las soluciones, leer este Readme.
 
 
 ## Ejercicio 1

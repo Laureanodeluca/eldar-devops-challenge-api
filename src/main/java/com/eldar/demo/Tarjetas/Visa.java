@@ -10,7 +10,8 @@ public class Visa extends Tarjeta {
 
     @Override
     public double getTasa() {
-        double tasa = truncarTasa((double)fechaVencimiento.get(Calendar.YEAR)%100/(fechaVencimiento.get(Calendar.MONTH)+1));
+        Calendar cal = Calendar.getInstance();
+        double tasa = truncarTasa((double)cal.get(Calendar.YEAR)%100/(cal.get(Calendar.MONTH)+1));
         return Math.round(tasa*10.0)/10.0;
     }
 }

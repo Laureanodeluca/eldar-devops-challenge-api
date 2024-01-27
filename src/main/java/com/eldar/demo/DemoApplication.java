@@ -35,7 +35,11 @@ public class DemoApplication {
       Tarjeta t;
       Operacion o;
       Calendar cal = Calendar.getInstance();
-      if (marca.equals("visa")) //Esto es un espanto, pero cambiarlo a esta altura sería demasiado...Creo una tarjeta dummy dependiendo de la marca recibida.
+      /**
+       * Esto es un espanto, pero cambiarlo a esta altura sería demasiado...Creo una tarjeta dummy dependiendo de la marca recibida.
+       * La fecha de vencimiento es una fecha cualquiera que sea después del día actual.
+       */
+      if (marca.equals("visa")) 
         t = new Visa(null, null, cal.get(Calendar.DAY_OF_MONTH)+1, cal.get(Calendar.MONTH)+2, cal.get(Calendar.YEAR)+1);
       else {
         if (marca.equals("naranja"))

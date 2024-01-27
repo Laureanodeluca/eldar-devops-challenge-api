@@ -11,7 +11,8 @@ public class Naranja extends Tarjeta {
     
     @Override
     public double getTasa() {
-        double tasa = truncarTasa(fechaVencimiento.get(Calendar.DAY_OF_MONTH)*0.5);
+        Calendar cal = Calendar.getInstance();
+        double tasa = truncarTasa(cal.get(Calendar.DAY_OF_MONTH)*0.5);
         return Math.round(tasa*10.0)/10.0;
     }
 }

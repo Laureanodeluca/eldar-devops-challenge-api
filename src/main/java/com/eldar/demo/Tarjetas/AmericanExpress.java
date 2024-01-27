@@ -10,7 +10,8 @@ public class AmericanExpress extends Tarjeta {
 
     @Override
     public double getTasa() {
-        double tasa = truncarTasa((fechaVencimiento.get(Calendar.MONTH)+1)*0.1);
+        Calendar cal = Calendar.getInstance();
+        double tasa = truncarTasa((cal.get(Calendar.MONTH)+1)*0.1);
         return Math.round(tasa*10.0)/10.0;
     }
 }

@@ -15,5 +15,15 @@ Para el ejercicio 1 se solicitó realizar un programa de prueba que tenga tres o
 Todos los archivos se encuentran en el directorio `src/main/java/com/eldar/demo`. Para ejecutar las tareas requeridas por el ejercicio 1, ejecutar el archivo `Ejecutable.java`. 
 
 ## Ejercicio 2
-Para la implementación del ejercicio 2, se solicitó una Api REST que devuelva la tasa de una operación, informando la marca de la tarjeta y el importe. Para eso, se creo una API con SpringBoot.
-<TODO: URL de la API, ¿cómo se usa la api?>
+Para la implementación del ejercicio 2, se solicitó una Api REST que devuelva la tasa de una operación, informando la marca de la tarjeta y el importe. Para eso, se creo una API con SpringBoot. Y se hosteó en Render. 
+
+La URL de la API es: https://eldar-devops-challenge.onrender.com/. Para poder obtener la tasa de una operación, usar el endpoint `/tasaOperacion`. Hay que ingresar la marca de la tarjeta y el importe, por lo que las consultas tienen siempre la siguiente forma:
+
+```
+https://eldar-devops-challenge.onrender.com/tasaOperacion?marca=<MARCA>&importe=<IMPORTE>
+```
+
+Dónde: 
+
+- `<MARCA>`: Puede ser cualquiera de las siguientes: `visa`, `amex`, `nara`.
+- `<IMPORTE>`: Puede ser cualquier valor entre 0 y 999.

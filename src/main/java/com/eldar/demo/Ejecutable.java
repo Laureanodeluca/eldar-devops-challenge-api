@@ -13,20 +13,34 @@ public class Ejecutable {
         Tarjeta visa = new Visa("4575 5700 9600 3596",new Persona("Juan", "Perez"), 31,12,2029);
         Tarjeta naranja = new Naranja("7655 0923 7488 9699", new Persona("Martina", "Gonzalez"),30,2,2029);
         Tarjeta amex = new AmericanExpress("3047 8500 5679 9696", new Persona("Pablo", "López"), 26, 7, 2024);
+        Tarjeta amex_copy = new AmericanExpress("3047 8500 5679 9696", new Persona("Pablo", "López"), 26, 7, 2024);
 
         Operacion o1 = new Operacion(759, amex);
-        Operacion o2 = new Operacion(150, visa);
-        Operacion o3 = new Operacion(180, naranja);
+        Operacion o3 = new Operacion(880, naranja);
 
-        System.out.println("========= INFORMACION DE LAS TARJETAS =========");
+        System.out.println("========= EJERCICIO 1 =========");
+        System.out.println("a. Invocar un método que devuelva toda la información de una tarjeta:");
         System.out.println(visa.getInfo());
-        System.out.println("\n"+naranja.getInfo());
-        System.out.println("\n"+amex.getInfo());
-        
-        System.out.println("\n========= INFORMACION DE LAS OPERACIONES =========");
-        System.out.println(getTasaDeOperacionDetallada(o1));
-        System.out.println("\n"+getTasaDeOperacionDetallada(o2));
-        System.out.println("\n"+getTasaDeOperacionDetallada(o3));
+
+        System.out.println("\nb. Informar si una operacion es válida:");
+        if (o1.esValida())
+            System.out.println("La operación o1 es válida. (Marca: "+o1.getTarjeta().getMarca()+", monto:"+o1.getMonto()+")");
+        else
+            System.out.println("La operación o1 es invalida. (Marca: "+o1.getTarjeta().getMarca()+", monto:"+o1.getMonto()+")");
+
+        System.out.println("\nc. Informar si una tarjeta es válida para operar:");
+        if (naranja.esValidaParaOperar())
+            System.out.println("La tarjeta naranja es válida para operar. (Fecha de vencimiento: "+naranja.toStringVencimiento());
+        else
+            System.out.println("La tarjeta naranja no es válida para operar. (Fecha de vencimiento: "+naranja.toStringVencimiento());
+
+        System.out.println("\nd. Informar si una tarjeta es distinta a otra:");
+        System.out.println("Son distintas (amex y naranja): "+sonDistintas(amex, naranja));
+        System.out.println("Son distintas (amex y amex_copy): "+sonDistintas(amex, amex_copy));
+
+        System.out.println("\ne. Obtener, por medio de un método, la tasa de una operación informando marca e importe: ");
+        System.out.println(getTasaDeOperacionDetallada(o3));
+
 
     }    
 
@@ -58,7 +72,7 @@ public class Ejecutable {
      */
     public static String getTasaDeOperacionDetallada(Operacion o) {
         try {
-            String toReturn = "Marca: " + o.getTarjeta().getMarca() + "\nMonto: "+o.getMonto();
+            String toReturn = "Marca: " + o.getTarjeta().getMarca() + "\nMonto: "+o.getMonto();;
             double tasa = o.getTasaDeOperacion();
             toReturn = toReturn + "\nTasa ("+o.getTarjeta().getTasa()+"%): " + tasa + "\nIMPORTE TOTAL: " + (o.getMonto() + tasa);
             return toReturn;

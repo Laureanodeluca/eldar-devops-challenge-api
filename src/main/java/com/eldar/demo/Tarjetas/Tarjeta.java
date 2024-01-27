@@ -69,7 +69,7 @@ public abstract class Tarjeta {
             "\nMarca: " + marca + 
             "\nVencimiento: " + toStringVencimiento() +
             "\nTasa: " + getTasa() +
-            "\nVálida para operar: " + esValidaParaOperar();
+            "%\nVálida para operar: " + esValidaParaOperar();
     }
 
     /**

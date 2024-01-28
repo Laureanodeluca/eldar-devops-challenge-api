@@ -58,7 +58,6 @@ public class DemoApplication {
       }
       else {
         try {
-          object.put("marca",t.getMarca());
           object.put("tasa",o.getTasaDeOperacion());
         }
         catch (OperacionInvalidaException | TarjetaInvalidaParaOperarException ex) {
